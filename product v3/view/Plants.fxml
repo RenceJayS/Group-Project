@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="718.0" prefWidth="1235.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.PlantController">
+   <children>
+      <ImageView fitHeight="718.0" fitWidth="1235.0">
+         <image>
+            <Image url="@../images/bg3.png" />
+         </image>
+      </ImageView>
+      <Pane fx:id="pane4" layoutX="450.0" layoutY="183.0" prefHeight="352.0" prefWidth="336.0" style="-fx-background-color: WHITE;">
+         <children>
+            <ImageView fx:id="img1" fitHeight="167.0" fitWidth="298.0" layoutX="65.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/plant3.jpg" />
+               </image>
+            </ImageView>
+            <Label fx:id="name1" layoutX="121.0" layoutY="236.0" text="Quezo Royal">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="price1" layoutX="157.0" layoutY="271.0" text="60.00">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Button fx:id="button4" layoutX="133.0" layoutY="308.0" mnemonicParsing="false" onAction="#buy" style="-fx-background-color: green;" text="Add to Cart" textFill="#fffdfd">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+         </children>
+         </Pane>
+               <Pane fx:id="pane5" layoutX="813.0" layoutY="183.0" prefHeight="352.0" prefWidth="336.0" style="-fx-background-color: WHITE;">
+         <children>
+            <Label fx:id="name2" layoutX="124.0" layoutY="236.0" text="Ube Delight">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="price2" layoutX="157.0" layoutY="273.0" text="60.00">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Button fx:id="button2" layoutX="133.0" layoutY="308.0" mnemonicParsing="false" onAction="#buy" style="-fx-background-color: green;" text="Add to Cart" textFill="#fffdfd">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="174.0" fitWidth="235.0" layoutX="42.0" layoutY="30.0">
+               <image>
+                  <Image url="@../images/plant2.jpg" />
+               </image>
+            </ImageView>
+         </children>
+         </Pane>
+            <Pane fx:id="pane6" layoutX="90.0" layoutY="183.0" prefHeight="352.0" prefWidth="336.0" style="-fx-background-color: WHITE;">
+         <children>
+            <Label fx:id="name3" layoutX="100.0" layoutY="235.0" text="Halo-Halo Special">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="price3" layoutX="152.0" layoutY="269.0" text="60.00">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Button fx:id="button3" layoutX="128.0" layoutY="307.0" mnemonicParsing="false" onAction="#buy" style="-fx-background-color: green;" text="Add to Cart" textFill="#fffdfd">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="196.0" fitWidth="242.0" layoutX="30.0" layoutY="6.0">
+               <image>
+                  <Image url="@../images/plant1.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Button fx:id="cartbutton" layoutX="1072.0" layoutY="36.0" mnemonicParsing="false" onAction="#gotocart" style="-fx-background-color: red;" text="My Cart" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="homebutton" layoutX="70.0" layoutY="36.0" mnemonicParsing="false" onAction="#gotohome" text="Go to Home">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="669.0" prefWidth="1006.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.HomeController">
+   <children>
+      <ImageView fitHeight="669.0" fitWidth="1022.0" layoutX="-14.0">
+         <image>
+            <Image url="@../images/bg3.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="207.0" layoutY="37.0" text="WELCOME TO BUBBLE TEA!" textFill="#d09d1d">
+         <font>
+            <Font name="Calibri Bold" size="55.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="459.0" fitWidth="665.0" layoutX="428.0" layoutY="105.0">
+         <image>
+            <Image url="@../images/h2.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="416.0" fitWidth="565.0" layoutX="24.0" layoutY="100.0">
+         <image>
+            <Image url="@../images/h1.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="button1" layoutX="227.0" layoutY="465.0" mnemonicParsing="false" onAction="#gotolight" text="Classic Series">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="button2" layoutX="627.0" layoutY="465.0" mnemonicParsing="false" onAction="#gotoplant" text="Specialty Series">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
